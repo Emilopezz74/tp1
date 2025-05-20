@@ -10,16 +10,24 @@
     --fifth-color: #1f1346;
 
 }
+.all-main {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
 }
-header{
-    overflow: hidden;
+.offer-section{
+    width: 100%;
+}
+.articles-migration{
+    width: 100%;
 }
 nav{
+
     display: flex;
     flex-direction: row;
 }
@@ -34,6 +42,7 @@ nav{
     font-size: 15px;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     
 }
 .down-arrow{
@@ -59,11 +68,11 @@ nav{
 }
 .navigation-section__flag img {
     width: 10px;}
+    
 .left-nav--side{
 
     font-weight: 600;
     display: flex;
-    padding-top: 35px;
     justify-content: center;
 }
 .log-in {
@@ -88,11 +97,10 @@ nav{
 }
 .sign-up--section{
     align-items: center;
-}
-.navegation-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
+
 
 .navegation-section a:hover {
     color: gray;}
@@ -100,8 +108,8 @@ nav{
 header {
     height: 80px;
     position: sticky;
-    top: 0;
     z-index: 1000;
+    top: 0;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -110,9 +118,6 @@ header {
     justify-content: center;
     border: 2px solid black;
     border-radius: 8px;
-}
-.left-nav--side{
-    padding: 0px 10px;
 }
 .hostinger-icon{
     padding: 30px 0px 30px 40px;
@@ -248,7 +253,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding:0px 110px 0px;
+    padding:0px 80px 0px;
     background-color: #1f1346;
     color: white;
     padding-bottom: 55px;
@@ -279,14 +284,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 30%;
     gap: 12px;
     align-items: start;
     border-radius: 16px;
+    width: 100%;
 }
 .migration-article-security{
     text-align: left;
-    width: 30%;
     padding: 32px;
     background-color: #301c6b;
     display: flex;
@@ -299,7 +303,6 @@ header {
 .migration-article-free{
     text-align: left;
     padding: 32px;
-    width: 30%;
     background-color: #301c6b;
     display: flex;
     flex-direction: column;
@@ -444,6 +447,16 @@ header {
     font-size: 14px;
     padding: 3px;
 }
+.h-svgo-icon-nav {
+    display: none;
+    position: fixed;
+    top: 5%;
+  right: 20px; /* o left: 20px; si querés que esté en la izquierda */
+    transform: translateY(-50%);
+  z-index: 1000; /* para que quede por encima del contenido */
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1124px) {
     .dark-articles{
         display: flex;
@@ -453,17 +466,68 @@ header {
 }
 @media screen and (max-width: 1138px) {
 .offers-son{
-    display: flex;
+
     flex-direction: column;
 }
 .navegation-section{
     display: none;
     
 }
+    .h-svgo-icon-nav {
+    display: block; /* o inline-block, según el diseño */
+    width: 35px;
+    height: 35px;
+    }
 }
 
+
+@media (max-width: 520px){
+    
+    .img1{
+        width: 450px;
+        height: 270px;
+    }
+}
+@media (max-width: 450px){
+    .img1{
+        width: 350px;
+        height: 270px;
+    }
+}
+@media (max-width: 700px) {
+    .footer-content {
+        padding: 20px 30px;
+        gap: 10px;
+    }
+    .migration-dark-section{
+        padding: 20px;
+    }
+
+    .socials-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto; 
+        gap: 6px;
+    }
+
+    .credit-cards{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .copyrigth-footer {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .payment-method{
+        flex-direction: column;
+    }
+}
+
+
 .offers-son{
-    margin: 0px 43px;
+
     padding: 0px 43px;
     width: 100%;
     display: flex;
